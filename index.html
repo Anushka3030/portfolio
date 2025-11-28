@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anushka Saxena - Front-End Developer & MCA Student Portfolio">
+    <meta name="keywords" content="developer, portfolio, front-end, HTML, CSS, JavaScript">
+    <title>Anushka Saxena - Front-End Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">Anushka Saxena</div>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="badge">Front-End Developer</span>
+                    <h1>Hi, I'm <span class="highlight">Anushka Saxena</span></h1>
+                    <p class="hero-description">I'm a front-end developer currently pursuing MCA. I build responsive, SEO-friendly websites and develop interactive UI components. Quick learner, adaptable, and eager for production exposure.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="downloadResume()">Download Resume</button>
+                        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Anushka3030" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/anushkasaxena302/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:anushkasaxena302@gmail.com" title="Email">
+                            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/anushka-saxena-profile.jpg" alt="Anushka Saxena - Front-End Developer" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">MCA Student | Creative Problem Solver</p>
+
+            <div class="about-content">
+                <p class="about-text">I'm Anushka Saxena, a passionate developer with a strong foundation in web development and design. Currently pursuing my Master of Computer Applications (MCA) at Lovely Professional University, I'm committed to mastering both front-end and backend technologies while maintaining a keen eye for user experience and responsive design.</p>
+
+                <div class="about-grid">
+                    <div class="about-box">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <p class="education-degree">Master of Computer Applications (MCA)</p>
+                            <p class="education-school">Lovely Professional University</p>
+                        </div>
+                        <div class="education-item">
+                            <p class="education-degree">Bachelor of Computer Applications (BCA)</p>
+                            <p class="education-school">Guru Nanak Khalsa College for Women</p>
+                        </div>
+                    </div>
+
+                    <div class="about-box">
+                        <h3>Core Strengths</h3>
+                        <ul class="strengths-list">
+                            <li>Analytical thinking & problem solving</li>
+                            <li>Collaborative team player</li>
+                            <li>Resilient & adaptive mindset</li>
+                            <li>Strong communication skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>C++</span>
+                            <span class="level-badge">Comfortable</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>C</span>
+                            <span class="level-badge">Comfortable</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>PHP</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Front-End</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <span class="level-badge">Comfortable</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Bootstrap</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <span class="level-badge">Comfortable</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>DBMS/PL-SQL</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Visual Studio</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <span class="level-badge">Comfortable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Other</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Selenium Testing</span>
+                            <span class="level-badge">Beginner</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>MIT App Inventor</span>
+                            <span class="level-badge">Beginner</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Java</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>OOP Concepts</span>
+                            <span class="level-badge">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">Professional Development & Internships</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Java Development Intern</h3>
+                        <p class="company">Octanet Services Pvt. Ltd.</p>
+                        <p class="duration">February – March 2025</p>
+                        <ul class="timeline-list">
+                            <li>Developed and optimized Java applications using Object-Oriented Programming principles</li>
+                            <li>Worked on backend development and API integration with team members</li>
+                            <li>Collaborated with senior developers to understand production workflows</li>
+                            <li>Participated in code reviews and best practices discussions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing my technical skills and project outcomes</p>
+
+            <div class="projects-grid">
+                <!-- HerboSphere Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>HerboSphere</h3>
+                        <p class="project-subtitle">Virtual Herbal Garden</p>
+                    </div>
+                    <p class="project-description">Educational platform featuring virtual herbal garden with information about medicinal plants and natural remedy recipes.</p>
+                    <div class="project-features">
+                        <h4>Features:</h4>
+                        <ul>
+                            <li>AI-powered chatbot for personalized suggestions</li>
+                            <li>Interactive plant information pages</li>
+                            <li>Recipe database with natural remedies</li>
+                            <li>Responsive design</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">API Integration</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <p class="project-date">February 2025</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Anushka3030/HerboSphere" target="_blank" class="btn btn-small">View GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Expense Tracker Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Expense Tracker</h3>
+                        <p class="project-subtitle">Centralized Database Solution</p>
+                    </div>
+                    <p class="project-description">Full-stack expense tracking application with MySQL backend and responsive frontend for efficient expense management.</p>
+                    <div class="project-features">
+                        <h4>Features:</h4>
+                        <ul>
+                            <li>Real-time expense tracking</li>
+                            <li>MySQL backend with optimized queries</li>
+                            <li>Bootstrap responsive design</li>
+                            <li>Mobile companion app (MIT App Inventor)</li>
+                            <li>Query optimization & indexing</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">MIT App Inventor</span>
+                    </div>
+                    <p class="project-date">November 2024</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Anushka3030/Expense-Tracker" target="_blank" class="btn btn-small">View GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Zomato Testing Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Software Testing - Zomato</h3>
+                        <p class="project-subtitle">Automated Testing Suite</p>
+                    </div>
+                    <p class="project-description">Comprehensive automated testing for UI and functional workflows with detailed Extent Reports for quality assurance.</p>
+                    <div class="project-features">
+                        <h4>Features:</h4>
+                        <ul>
+                            <li>Automated UI testing</li>
+                            <li>Authentication flow validation</li>
+                            <li>Search functionality testing</li>
+                            <li>Order flow automation</li>
+                            <li>Extent Reports integration</li>
+                            <li>Reduced manual testing effort</li>
+                        </ul>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Selenium</span>
+                        <span class="tech-tag">TestNG</span>
+                        <span class="tech-tag">Extent Reports</span>
+                        <span class="tech-tag">Java</span>
+                    </div>
+                    <p class="project-date">October 2024</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-small">View Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'd love to hear from you. Let's connect!</p>
+
+            <div class="contact-wrapper">
+                <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p id="formMessage" class="form-message"></p>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <a href="mailto:anushkasaxena302@gmail.com">anushkasaxena302@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Phone</h3>
+                        <a href="tel:+919914431346">+91-9914431346</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Ludhiana, Punjab, India</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Connect</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/Anushka3030" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://linkedin.com/in/anushkasaxena302/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Anushka Saxena. All rights reserved.</p>
+            <p>Crafted with dedication by Anushka Saxena</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
